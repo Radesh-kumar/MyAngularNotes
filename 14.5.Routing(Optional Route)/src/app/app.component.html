@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<my-server></my-server>
+<h1 >Routes</h1>
+<h3>Style.css imported from compleate project</h3>
+
+<nav>
+<a routerLink="/comp1" routerLinkActive="active">Comp1</a><br>
+<!-- *** href reloads the page but routerLink wont *** -->
+<a href="/comp2" routerLinkActive="active">Comp2</a>
+</nav>
+
+<p> *** href reloads the page but routerLink wont ***</p>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- Fav icon -->
+  <link rel="icon" type="image/png"  href="fav/favicon-16x16.png">
+
+</head>
+<body>
+    <!-- For Data Binding(2 way) -->
+
+    <h2>Two way Data Binding</h2>
+    <label >User Name:</label><br><br>
+    <input type="text" [(ngModel)]="var1" ><br><br>
+  
+    <label > Salary:</label><br><br>
+    <input type="text" [(ngModel)]="var2" ><br><br>
+  
+      <button >submit</button>
+  
+    <h2>Hello {{var1}} ur salary is {{var2}} and your annual salary is {{annual_salary()}}</h2>
+  
+    <br>
+  
+    <!-- For Event Binding  -->
+    <h2>Event Binding</h2>
+    <label >User Name:</label><br><br>
+    <input type="text" [(ngModel)]="var3" ><br><br>
+  
+    <p>{{var3}}</p>
+    <br>
+  
+    <button (click)="click_toRemove()" [disabled]="dontWant()">Reset Button </button>
+    <br><br>
+     <!-- Local refernce  -->
+      <h2>Local refernce</h2>
+     <label >User Name:</label><br><br>
+     <input type="text" #input1 (keyup)="localreference(input1.value) "><br><br>
+     <p>{{value}}</p>
+  
+  
+  
+  
+</body>
+</html>

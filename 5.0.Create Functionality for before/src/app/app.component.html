@@ -1,0 +1,22 @@
+<div class="card card-block">
+  
+  <h3 class="card-title">Create Stuff</h3>
+  <label >S.no:</label>
+  <input type="text" [(ngModel)]="var1" >
+
+  <label >User Name:</label>
+  <input type="text" [(ngModel)]="var2" >
+
+  <label > age:</label>
+  <input type="text" [(ngModel)]="var3" ><br>
+  <div><button class="btn btn-success" (click)="submitfunc()">Submit</button>
+  </div> 
+  <br>
+</div>
+
+<div class="card card-block"  *ngFor="let i of joke">
+  <h4 class="card-title">{{i.numb}}.{{i.name}}</h4>
+  <p [hidden]="state[i.numb]"id="need{{i.numb}}" class="card-text">Your age is:{{i.age}}</p>
+  <div><button class="btn btn-info" (click)="toggle(i.numb)">Toggle</button></div> 
+</div>
+

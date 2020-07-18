@@ -1,0 +1,9 @@
+<div class="card card-block"  *ngFor="let i of joke">
+  <h4 class="card-title">{{i.name}}</h4>
+  <p [hidden]="state" class="card-text">Your age is:{{i.age}}</p>
+  <div><button class="btn btn-info" (click)="toggle()">Toggle</button></div> 
+</div>
+<h3 class='jumbotron text-center'>$ We are passing here data as Objects</h3>
+<h3 class='jumbotron text-center'>$ And each component is not isolated</h3>
+<h3 class='jumbotron text-center'>$ All components are linked together</h3>
+

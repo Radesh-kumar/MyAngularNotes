@@ -1,0 +1,6 @@
+<div class="card card-block"  *ngFor="let i of joke">
+  <h4 class="card-title">{{i.numb}}.{{i.name}}</h4>
+  <p [hidden]="state[i.numb]"id="need{{i.numb}}" class="card-text">Your age is:{{i.age}}</p>
+  <div><button class="btn btn-info" (click)="toggle(i.numb)">Toggle</button></div> 
+</div>
+

@@ -1,0 +1,33 @@
+<!-- Using *ngIf ,#thenBlock and #elseBlock -->
+<!-- Using [ngClass] and [ngStyle] -->
+<h2 [ngStyle]="{color: getColor()}" >Hey im using ngIf</h2>
+
+<h2 [ngClass]="{'newclass': true}" >Hey this is ngClass</h2>
+<div *ngIf="flag; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>Flag is true</ng-template>
+
+<ng-template #elseBlock>Flag is false</ng-template>
+<br><br>
+<button (click)="toggleFlag()">Toggle</button>
+<br><br><br>
+
+<!-- Using ngFor/ng-repeat in ang.js -->
+<label > Enter Stdent Name: </label>
+<br>
+<input type="text" [(ngModel)]="currentname"> <br><br>
+<button (click)="add()"> add to push</button>
+<li *ngFor="let name of studentarray ">{{name}}</li>
+<br> <br>
+
+
+<!-- toggling display and counting number of clicks -->
+<button (click)="toggleDisplay()">toggleDisplay</button>
+<p *ngIf="display" [ngStyle]="{color: col }">
+Starboy
+The Weeknd
+I'm tryna put you in the worst mood, ah
+P1 cleaner than your church shoes, ah
+Milli point two just to h
+</p>
+<p>Counter:{{counter}}</p>
+

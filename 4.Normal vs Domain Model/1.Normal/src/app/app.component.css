@@ -1,0 +1,7 @@
+@import url('https://unpkg.com/bootstrap/dist/css/bootstrap.min.css');
+.newclass {
+  font-family: Lato;
+  color:rgb(10, 226, 241);
+  background-color: yellow;
+}
+
