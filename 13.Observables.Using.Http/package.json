@@ -7,7 +7,7 @@
     "core-js": "2.5.7",
     "zone.js": "0.8.26",
     "@types/node": "6.0.113",
-    "@angular/core": "6.0.0",
+    "@angular/core": "11.0.5",
     "@angular/http": "6.0.0",
     "@angular/forms": "6.0.0",
     "@types/jasmine": "2.5.54",
